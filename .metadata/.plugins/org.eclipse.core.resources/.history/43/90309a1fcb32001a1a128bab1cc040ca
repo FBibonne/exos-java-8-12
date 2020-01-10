@@ -1,0 +1,19 @@
+package exo1;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Etape1 {
+	
+	private Runnable runnable=()->System.out.println("Exercice1.Etape1");
+	
+	public void test() {
+		runnable.run();
+		//ajouter à la méthode main une variable strString qui est un tableau de String initialisée
+		//avec les prénoms des stagiaires de la salle.
+		String[] strString= {"Ludovic","Laurent", "Fabrice","Mathieu", "Loïc", "Olivier", "Betty", "Benjamin","Simon", "Nicolas"};
+		 //Ensuite, il est demandé de trier les éléments de ce tableau à l’aide de la classe Arrays et de sa méthode sort
+		Arrays.sort(strString, (s1,s2)->(mirroir(s1)).compareTo(mirroir(s2)) );
+	}
+
+}

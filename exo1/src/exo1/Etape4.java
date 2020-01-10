@@ -1,0 +1,40 @@
+package exo1;
+
+import java.util.function.Supplier;
+
+public class Etape4 implements Etape {
+	
+	public static interface Defaulable{
+		default String notRequired() {
+			return "Not yet implemented";
+		}
+	}
+	
+	public static class DefaulableImpl implements Defaulable{}
+	
+	public static class OverridableImpl implements Defaulable{
+
+		@Override
+		public String notRequired() {
+			return "Overrided";
+		}
+	}
+	
+	public static interface DefaulableFactory {
+		static Defaulable create(Supplier<Defaulable> supplier) {
+			return supplier.get();
+		}
+	}
+	
+	
+
+	@Override
+	public void test() {
+		// appeler la méthode create avec en paramètre une référence au new de la classe DefaulableImpl, 
+		// pour avoir un objet respectant l’interface Defaulable,
+		System.out.println(DefaulableFactory.create(DefaulableImpl::new).notRequired());
+		//appeler la méthode create avec en paramètre une référence au new de la classe OverridableImpl
+		System.out.println(DefaulableFactory.create(OverridableImpl::new).notRequired());
+	}
+
+}

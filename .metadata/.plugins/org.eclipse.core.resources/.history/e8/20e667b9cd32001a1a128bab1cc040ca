@@ -1,0 +1,11 @@
+package exo1;
+
+public class Etape3 implements Etape {
+
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

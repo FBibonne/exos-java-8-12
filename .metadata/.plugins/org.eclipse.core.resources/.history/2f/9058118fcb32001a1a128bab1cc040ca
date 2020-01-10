@@ -1,0 +1,11 @@
+package exo1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		(new Etape1()).test();
+		(new Etape2()).test();
+
+	}
+
+}

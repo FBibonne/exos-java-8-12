@@ -1,0 +1,12 @@
+package exo1;
+
+public class Etape1 {
+	
+	private Runnable runnable=()->System.out.println("Exercice1.Etape1");
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

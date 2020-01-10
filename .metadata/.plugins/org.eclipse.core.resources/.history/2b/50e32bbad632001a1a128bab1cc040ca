@@ -1,0 +1,23 @@
+package exo2;
+
+import java.time.Month;
+import java.time.Year;
+import java.time.YearMonth;
+import java.util.Arrays;
+
+public class Main {
+
+	public static class MonthsInYear {
+		public static void display(int annee) {
+			Year year = Year.of(annee);
+			Arrays.stream(Month.values()).map(year::atMonth)
+			      .mapToInt(YearMonth::lengthOfMonth)
+				  .forEach(System.out::println);
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

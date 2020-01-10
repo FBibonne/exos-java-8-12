@@ -1,0 +1,13 @@
+package exo1;
+
+public class Main {
+	
+	Etape[] etapes= {new Etape1(), new Etape2()};
+
+	public static void main(String[] args) {
+		(new Etape1()).test();
+		(new Etape2()).test();
+
+	}
+
+}

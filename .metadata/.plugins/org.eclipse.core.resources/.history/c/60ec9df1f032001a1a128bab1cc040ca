@@ -1,0 +1,24 @@
+package exo3;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Compter les occurences des mots de Sherlock.txt en ottant au préalable les mots du flux json stop-words-en.json
+ * 
+ *
+ */
+public class Etape2 {
+
+	public static void main(String[] args) throws IOException {
+		Map<String, Integer> nathalie=new HashMap<>();
+		Files.lines(Paths.get("C:\\Users\\Public\\sherlock.txt")).flatMap(s->Arrays.stream(s.split(" "))).forEach(s->nathalie.merge(s, remappingFunction));;
+		
+
+	}
+
+}

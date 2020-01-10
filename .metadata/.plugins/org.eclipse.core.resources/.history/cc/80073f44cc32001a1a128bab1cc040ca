@@ -1,0 +1,19 @@
+package exo1;
+
+public class Etape2 implements Etape{
+
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	//une méthode static doWork() 
+	public static void doWork() {
+		// afficher le nom du thread courant 
+		//et attend une poignée de secondes 
+		//avant de boucler 50 fois
+		
+	}
+
+}

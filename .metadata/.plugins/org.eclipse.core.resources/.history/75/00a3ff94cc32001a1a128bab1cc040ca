@@ -1,0 +1,30 @@
+package exo1;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.sun.tools.sjavac.server.SysInfo;
+
+public class Etape2 implements Etape{
+
+	@Override
+	public void test() {
+		ExecutorService services=Executors.newFixedThreadPool(2);
+		
+		
+	}
+	
+	//une méthode static doWork() 
+	public static void doWork() throws InterruptedException {
+		// afficher le nom du thread courant 
+		//et attend une poignée de secondes 
+		//avant de boucler 50 fois
+		
+		for(int i=0; i<50; i++) {
+			System.out.println(Thread.currentThread().getName());
+			Thread.sleep(500);
+		}
+		System.out.println("----");
+	}
+
+}

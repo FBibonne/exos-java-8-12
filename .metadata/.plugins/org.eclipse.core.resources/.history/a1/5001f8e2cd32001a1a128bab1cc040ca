@@ -1,0 +1,18 @@
+package exo1;
+
+public class Etape3 implements Etape {
+	
+	// définir une interface fonctionnelle nommée Formatter,
+	@FunctionalInterface
+	public interface Formatter{
+		
+	}
+	//avec une obligation de codage nommée format qui prend en entrée une chaîne de caractères qui décrit un format et un nombre variable d’Object paramètres et qui retourne une chaîne de caractères, 
+
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

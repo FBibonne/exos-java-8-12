@@ -1,0 +1,16 @@
+package exo2;
+
+public class Main {
+	
+	public static class MonthsInYear {
+		public static void display(int annee) {
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

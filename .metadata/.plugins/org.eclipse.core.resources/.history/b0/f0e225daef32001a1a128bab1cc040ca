@@ -1,0 +1,19 @@
+package exo3;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+/**
+ * Compter les occurences des mots de Sherlock.txt en ottant au préalable les mots du flux json stop-words-en.json
+ * 
+ *
+ */
+public class Etape2 {
+
+	public static void main(String[] args) {
+		Files.lines(Paths.get("C:\\Users\\Public\\sherlock.txt"))
+		
+
+	}
+
+}

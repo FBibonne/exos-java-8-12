@@ -1,0 +1,34 @@
+package exo1;
+
+import java.util.List;
+
+public class Etape3 implements Etape {
+	
+	// définir une interface fonctionnelle nommée Formatter,
+	@FunctionalInterface
+	public interface Formatter{
+		//avec une obligation de codage nommée format qui prend en entrée une chaîne de caractères 
+		// qui décrit un format et un nombre variable d’Object paramètres et qui retourne une chaîne de caractères,
+		public String format(String s, Object... parametres);
+		
+	}
+	 
+
+	@Override
+	public void test() {
+		//créer une liste de chaînes de caractères,
+		List<String> prenoms= List.of("Ludovic","Laurent", "Fabrice","Mathieu", "Loïc", "Olivier", "Betty", "Benjamin","Simon", "Nicolas");
+		o appeler la méthode static forEach 2 fois avec la liste. La 1ère invocation utilisera une référence à la méthode String::format. La 2ème invocation utilisera une lambda expression équivalente dont le corps invoque la méthode format.
+
+	}
+	
+	/*
+	 * une méthode static nommée forEach ayant deux paramètres : 
+	 * o une liste de chaînes de caractères 
+	 * o un formatter 
+	 */
+	public static void forEach(List<String> chaines, Formatter formatter) {
+		chaines.forEach(s->System.out.print(formatter.format("-- %s -- \r\n", s)));
+	}
+
+}

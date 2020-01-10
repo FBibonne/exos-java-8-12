@@ -1,0 +1,5 @@
+package exo1;
+
+public class Etape2 implements Etape{
+
+}

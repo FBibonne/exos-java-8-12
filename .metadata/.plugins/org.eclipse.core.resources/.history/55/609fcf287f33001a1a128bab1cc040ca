@@ -1,0 +1,70 @@
+package exo2;
+
+import java.time.Month;
+import java.time.Year;
+import java.time.format.TextStyle;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Formatter;
+import java.util.List;
+import java.util.Locale;
+import java.util.function.Predicate;
+
+public class Main {
+	
+	public static class Ligne{
+		private String contenu;
+
+		public String getContenu() {
+			return contenu;
+		}
+
+		public void setContenu(String contenu) {
+			this.contenu = contenu;
+		}
+		
+		
+	}
+
+	public static class MonthsInYear {
+		public static void display(int annee) {
+			Year year = Year.of(annee);
+			/*
+			 * Arrays.stream(Month.values()).map(year::atMonth)
+			 * .mapToInt(YearMonth::lengthOfMonth) .forEach(System.out::println);
+			 */
+			Formatter formatter = new Formatter();
+			StringBuilder sb = new StringBuilder();
+			Ligne ligne=new Ligne();
+			Arrays.stream(Month.values()).map(year::atMonth).forEach(m -> ligne.setContenu(formatter.format("%s : %d \r\n",
+					m.getMonth().getDisplayName(TextStyle.FULL, Locale.FRENCH), m.lengthOfMonth()).toString()));
+			formatter.close();
+		}
+	}
+
+	public static void main(String[] args) {
+		//MonthsInYear.display(2020);
+		System.out.println(calculerPremiers(100));
+	}
+	
+	public static class FiltreInteger {
+		
+		private List<Integer> premiers=new ArrayList<>();
+
+		public boolean test(Integer t) {
+			return premiers.stream().filter(p -> ( t % p)==0).count()==0;
+		}
+	};
+	
+	
+	public static List<Integer> calculerPremiers(int n){
+		List<Integer> nombres=new ArrayList<>();
+		for(int i=1; i<n+1; i++) {
+			nombres.add(i);
+		}
+		List<Integer> retour=new ArrayList<>();
+		nombres.stream().filter(filtre::test).peek(retour::add);
+		return retour;
+	}
+
+}

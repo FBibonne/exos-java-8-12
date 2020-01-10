@@ -1,0 +1,12 @@
+package utiliserthreads;
+
+public class ExempleExecutorService {
+	
+	private static Runnable runnable = ()->System.out.println("Exercice1.Etape1");
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

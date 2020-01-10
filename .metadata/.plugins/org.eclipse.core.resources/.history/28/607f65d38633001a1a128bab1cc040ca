@@ -1,0 +1,14 @@
+package exo2.calendrier;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		if (args.length==3) {
+			
+		}else {
+			System.err.println("USAGE : java --module exo2.clendrier.AppMain <jour> <mois> <annee>");
+		}
+
+	}
+
+}
