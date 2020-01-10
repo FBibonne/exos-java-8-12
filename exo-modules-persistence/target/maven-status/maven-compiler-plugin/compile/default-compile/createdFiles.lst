@@ -1,0 +1,5 @@
+fr\java\persistence\repository\UserRepository.class
+fr\java\persistence\entities\UserEntity.class
+fr\java\persistence\repository\RepositoryFactory.class
+module-info.class
+fr\java\persistence\repository\impl\UserRepositoryImpl.class

@@ -17,4 +17,22 @@
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
-</project>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<configuration>
+					<executable>java</executable>
+					<mainClass>fr.java.service.AppMain</mainClass>
+					<arguments>
+						<argument>--module-path</argument>
+						<argument>${output.dir}</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project> 
