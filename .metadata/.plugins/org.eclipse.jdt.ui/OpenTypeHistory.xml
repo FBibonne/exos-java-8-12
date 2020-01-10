@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=exo1/src&lt;exo1{Etape.java[Etape" modifiers="513" timestamp="1578565982646"/>
+    <typeInfo handle="=exo-Flow/C:\/Program Files\/Java\/jdk-13.0.1\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/13\/docs\/api\/=/&lt;java.util.concurrent(SubmissionPublisher.class[SubmissionPublisher" modifiers="33" timestamp="1578563634667"/>
+    <typeInfo handle="=exo-Flow/C:\/Program Files\/Java\/jdk-13.0.1\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/13\/docs\/api\/=/&lt;java.util.concurrent(Flow$Subscriber.class[Subscriber" modifiers="1545" timestamp="1578563634667"/>
+</typeInfoHistroy>
